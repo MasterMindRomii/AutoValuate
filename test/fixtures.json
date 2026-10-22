@@ -1,0 +1,442 @@
+[
+ {
+  "input": {
+   "family": "Amaze",
+   "trim": "S",
+   "year": 2013,
+   "kms": 200000,
+   "fuel": "Diesel",
+   "transmission": "Manual"
+  },
+  "expected": 278275.09465044446
+ },
+ {
+  "input": {
+   "family": "BR-V",
+   "trim": "V",
+   "year": 2016,
+   "kms": 120000,
+   "fuel": "Diesel",
+   "transmission": "Manual"
+  },
+  "expected": 577258.9022303665
+ },
+ {
+  "input": {
+   "family": "Brio",
+   "trim": "S",
+   "year": 2013,
+   "kms": 33912,
+   "fuel": "Petrol",
+   "transmission": "Manual"
+  },
+  "expected": 294367.6517406135
+ },
+ {
+  "input": {
+   "family": "City",
+   "trim": "SV",
+   "year": 2014,
+   "kms": 104790,
+   "fuel": "Diesel",
+   "transmission": "Manual"
+  },
+  "expected": 438398.9037584829
+ },
+ {
+  "input": {
+   "family": "City",
+   "trim": "S",
+   "year": 2012,
+   "kms": 91030,
+   "fuel": "Petrol",
+   "transmission": "Manual"
+  },
+  "expected": 344256.2626427766
+ },
+ {
+  "input": {
+   "family": "Amaze",
+   "trim": "EX",
+   "year": 2016,
+   "kms": 70000,
+   "fuel": "Petrol",
+   "transmission": "Manual"
+  },
+  "expected": 359407.3241861532
+ },
+ {
+  "input": {
+   "family": "Amaze",
+   "trim": "VX",
+   "year": 2015,
+   "kms": 26000,
+   "fuel": "Petrol",
+   "transmission": "Automatic"
+  },
+  "expected": 530309.6363442802
+ },
+ {
+  "input": {
+   "family": "City",
+   "trim": "SV",
+   "year": 2015,
+   "kms": 110586,
+   "fuel": "Diesel",
+   "transmission": "Manual"
+  },
+  "expected": 489604.09557445586
+ },
+ {
+  "input": {
+   "family": "Brio",
+   "trim": "S",
+   "year": 2013,
+   "kms": 58176,
+   "fuel": "Petrol",
+   "transmission": "Manual"
+  },
+  "expected": 283125.76361100667
+ },
+ {
+  "input": {
+   "family": "Amaze",
+   "trim": "VX",
+   "year": 2018,
+   "kms": 50000,
+   "fuel": "Diesel",
+   "transmission": "Manual"
+  },
+  "expected": 605096.1519470251
+ },
+ {
+  "input": {
+   "family": "Amaze",
+   "trim": "VX",
+   "year": 2015,
+   "kms": 50000,
+   "fuel": "Petrol",
+   "transmission": "Automatic"
+  },
+  "expected": 505871.2203891275
+ },
+ {
+  "input": {
+   "family": "City",
+   "trim": "VX",
+   "year": 2017,
+   "kms": 50000,
+   "fuel": "Petrol",
+   "transmission": "Automatic"
+  },
+  "expected": 853957.7244211108
+ },
+ {
+  "input": {
+   "family": "City",
+   "trim": "V",
+   "year": 2019,
+   "kms": 42240,
+   "fuel": "Diesel",
+   "transmission": "Manual"
+  },
+  "expected": 855963.1263655265
+ },
+ {
+  "input": {
+   "family": "Jazz",
+   "trim": "SV",
+   "year": 2016,
+   "kms": 52456,
+   "fuel": "Diesel",
+   "transmission": "Manual"
+  },
+  "expected": 513511.1159378261
+ },
+ {
+  "input": {
+   "family": "Amaze",
+   "trim": "E",
+   "year": 2013,
+   "kms": 70000,
+   "fuel": "Diesel",
+   "transmission": "Manual"
+  },
+  "expected": 287687.1272715842
+ },
+ {
+  "input": {
+   "family": "Civic",
+   "trim": "V",
+   "year": 2010,
+   "kms": 40000,
+   "fuel": "Petrol",
+   "transmission": "Automatic"
+  },
+  "expected": 290830.7892961155
+ },
+ {
+  "input": {
+   "family": "Jazz",
+   "trim": "VX",
+   "year": 2019,
+   "kms": 30000,
+   "fuel": "Petrol",
+   "transmission": "Automatic"
+  },
+  "expected": 828162.8747121503
+ },
+ {
+  "input": {
+   "family": "Jazz",
+   "trim": "Basic",
+   "year": 2009,
+   "kms": 78216,
+   "fuel": "Petrol",
+   "transmission": "Manual"
+  },
+  "expected": 159056.65429907388
+ },
+ {
+  "input": {
+   "family": "Amaze",
+   "trim": "VX",
+   "year": 2022,
+   "kms": 5362,
+   "fuel": "Petrol",
+   "transmission": "Automatic"
+  },
+  "expected": 1094799.3562445
+ },
+ {
+  "input": {
+   "family": "City",
+   "trim": "V",
+   "year": 2011,
+   "kms": 119822,
+   "fuel": "Petrol",
+   "transmission": "Manual"
+  },
+  "expected": 328846.8429690922
+ },
+ {
+  "input": {
+   "family": "Jazz",
+   "trim": "VX",
+   "year": 2019,
+   "kms": 32699,
+   "fuel": "Petrol",
+   "transmission": "Automatic"
+  },
+  "expected": 823031.6022643617
+ },
+ {
+  "input": {
+   "family": "Jazz",
+   "trim": "VX",
+   "year": 2016,
+   "kms": 72926,
+   "fuel": "Petrol",
+   "transmission": "Manual"
+  },
+  "expected": 521113.3294061092
+ },
+ {
+  "input": {
+   "family": "City",
+   "trim": "SV",
+   "year": 2015,
+   "kms": 73948,
+   "fuel": "Petrol",
+   "transmission": "Manual"
+  },
+  "expected": 507230.9803792413
+ },
+ {
+  "input": {
+   "family": "Accord",
+   "trim": "Standard",
+   "year": 2011,
+   "kms": 67507,
+   "fuel": "Petrol",
+   "transmission": "Manual"
+  },
+  "expected": 435113.7646868801
+ },
+ {
+  "input": {
+   "family": "WR-V",
+   "trim": "VX",
+   "year": 2018,
+   "kms": 28000,
+   "fuel": "Petrol",
+   "transmission": "Manual"
+  },
+  "expected": 782829.9366589927
+ },
+ {
+  "input": {
+   "family": "Jazz",
+   "trim": "S",
+   "year": 2012,
+   "kms": 70000,
+   "fuel": "Petrol",
+   "transmission": "Manual"
+  },
+  "expected": 280667.16945418913
+ },
+ {
+  "input": {
+   "family": "Civic",
+   "trim": "V",
+   "year": 2008,
+   "kms": 110000,
+   "fuel": "Petrol",
+   "transmission": "Manual"
+  },
+  "expected": 177611.4482879325
+ },
+ {
+  "input": {
+   "family": "City",
+   "trim": "ZX",
+   "year": 2018,
+   "kms": 23733,
+   "fuel": "Petrol",
+   "transmission": "Automatic"
+  },
+  "expected": 1051330.743991222
+ },
+ {
+  "input": {
+   "family": "City",
+   "trim": "S",
+   "year": 2010,
+   "kms": 70590,
+   "fuel": "Petrol",
+   "transmission": "Manual"
+  },
+  "expected": 266042.5302435665
+ },
+ {
+  "input": {
+   "family": "Amaze",
+   "trim": "S",
+   "year": 2013,
+   "kms": 71644,
+   "fuel": "Petrol",
+   "transmission": "Manual"
+  },
+  "expected": 301573.2878064
+ },
+ {
+  "input": {
+   "family": "City",
+   "trim": "S",
+   "year": 2008,
+   "kms": 81543,
+   "fuel": "Petrol",
+   "transmission": "Manual"
+  },
+  "expected": 194435.65753368216
+ },
+ {
+  "input": {
+   "family": "Brio",
+   "trim": "S",
+   "year": 2012,
+   "kms": 85367,
+   "fuel": "Petrol",
+   "transmission": "Manual"
+  },
+  "expected": 242338.63324872093
+ },
+ {
+  "input": {
+   "family": "BR-V",
+   "trim": "S",
+   "year": 2016,
+   "kms": 59235,
+   "fuel": "Diesel",
+   "transmission": "Manual"
+  },
+  "expected": 619756.2545003261
+ },
+ {
+  "input": {
+   "family": "Mobilio",
+   "trim": "RS",
+   "year": 2015,
+   "kms": 80000,
+   "fuel": "Diesel",
+   "transmission": "Manual"
+  },
+  "expected": 588868.115175281
+ },
+ {
+  "input": {
+   "family": "City",
+   "trim": "S",
+   "year": 2014,
+   "kms": 82410,
+   "fuel": "Diesel",
+   "transmission": "Manual"
+  },
+  "expected": 441967.39333243604
+ },
+ {
+  "input": {
+   "family": "City",
+   "trim": "SV",
+   "year": 2014,
+   "kms": 59320,
+   "fuel": "Petrol",
+   "transmission": "Manual"
+  },
+  "expected": 459673.77848379733
+ },
+ {
+  "input": {
+   "family": "WR-V",
+   "trim": "S",
+   "year": 2017,
+   "kms": 17000,
+   "fuel": "Petrol",
+   "transmission": "Manual"
+  },
+  "expected": 648356.3348072511
+ },
+ {
+  "input": {
+   "family": "City",
+   "trim": "GXi",
+   "year": 2005,
+   "kms": 59124,
+   "fuel": "Petrol",
+   "transmission": "Manual"
+  },
+  "expected": 104806.64520098468
+ },
+ {
+  "input": {
+   "family": "Amaze",
+   "trim": "V",
+   "year": 2018,
+   "kms": 53955,
+   "fuel": "Diesel",
+   "transmission": "Automatic"
+  },
+  "expected": 689805.6981753064
+ },
+ {
+  "input": {
+   "family": "City",
+   "trim": "V",
+   "year": 2015,
+   "kms": 125308,
+   "fuel": "Petrol",
+   "transmission": "Manual"
+  },
+  "expected": 539356.1101996745
+ }
+]
