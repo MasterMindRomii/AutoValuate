@@ -1,0 +1,18 @@
+{
+  // Cloudflare Worker configuration — https://developers.cloudflare.com/workers/wrangler/configuration/
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "autovaluate",
+  "main": "src/index.js",
+  "compatibility_date": "2025-09-01",
+
+  // The website. Files in /public are served straight from Cloudflare's edge cache.
+  // Only /api/* requests wake up the Worker code in src/index.js.
+  "assets": {
+    "directory": "./public",
+    "binding": "ASSETS",
+    "not_found_handling": "single-page-application",
+    "run_worker_first": ["/api/*"]
+  },
+
+  "observability": { "enabled": true }
+}

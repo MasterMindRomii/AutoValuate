@@ -1,0 +1,17 @@
+{
+  "name": "autovaluate",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Used Honda car price estimator — Cloudflare Worker + static site",
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "test": "node --test test/*.test.js",
+    "train": "python ml/train.py"
+  },
+  "devDependencies": {
+    "wrangler": "^4.40.0"
+  },
+  "license": "MIT"
+}
