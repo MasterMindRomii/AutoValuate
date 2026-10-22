@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AutoValuate — used Honda price estimator</title>
+  <meta name="description" content="Estimate the resale price of a used Honda in India from its model, variant, year, kilometres, fuel and gearbox.">
+  <meta name="theme-color" content="#F2C230">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header class="masthead">
+    <div class="wrap masthead__row">
+      <a class="wordmark" href="/" aria-label="AutoValuate home">
+        <span class="wordmark__plate">AV</span>AutoValuate
+      </a>
+      <p class="masthead__note">Resale estimates for used Hondas in India</p>
+    </div>
+  </header>
+
+  <main class="wrap layout">
+    <form id="form" class="panel form" novalidate>
+      <h1 class="form__title">What's your Honda worth?</h1>
+      <p class="form__lede">Tell us about the car. The estimate updates as you change anything.</p>
+
+      <fieldset class="field">
+        <legend>Model</legend>
+        <div id="family" class="chips" role="radiogroup" aria-label="Model"></div>
+      </fieldset>
+
+      <fieldset class="field">
+        <legend>Variant</legend>
+        <div id="trim" class="chips chips--small" role="radiogroup" aria-label="Variant">
+          <p class="hint">Pick a model first.</p>
+        </div>
+      </fieldset>
+
+      <div class="field-row">
+        <div class="field">
+          <label for="year">Registration year</label>
+          <select id="year" name="year"></select>
+        </div>
+        <div class="field">
+          <label for="kms">Kilometres driven</label>
+          <input id="kms" name="kms" type="text" inputmode="numeric" autocomplete="off" placeholder="e.g. 45,000">
+        </div>
+      </div>
+      <input id="kmsRange" class="range" type="range" min="1000" max="200000" step="1000" value="45000" aria-label="Kilometres driven slider">
+
+      <div class="field-row">
+        <fieldset class="field">
+          <legend>Fuel</legend>
+          <div id="fuel" class="segmented" role="radiogroup" aria-label="Fuel"></div>
+        </fieldset>
+        <fieldset class="field">
+          <legend>Gearbox</legend>
+          <div id="transmission" class="segmented" role="radiogroup" aria-label="Gearbox"></div>
+        </fieldset>
+      </div>
+
+      <button class="cta" type="submit">Estimate price</button>
+      <p id="formError" class="error" role="alert" hidden></p>
+    </form>
+
+    <section id="result" class="result" aria-live="polite">
+      <div class="panel readout">
+        <p id="readoutLabel" class="readout__label">Estimated resale price</p>
+        <div id="odometer" class="odometer" aria-hidden="true"></div>
+        <p id="priceText" class="sr-only"></p>
+        <p id="lakh" class="readout__lakh">Fill in the details to see an estimate.</p>
+
+        <div id="rangeBlock" class="range-viz" hidden>
+          <div class="range-viz__bar"><span id="rangeMarker" class="range-viz__marker"></span></div>
+          <div class="range-viz__ends"><span id="rangeLow"></span><span id="rangeHigh"></span></div>
+          <p class="range-viz__note">8 in 10 comparable listings were priced inside this range.</p>
+        </div>
+      </div>
+
+      <div id="details" class="details" hidden>
+        <div class="panel">
+          <h2>What moved the price</h2>
+          <ul id="factors" class="factors"></ul>
+        </div>
+
+        <div class="panel">
+          <h2>If you keep it</h2>
+          <p class="sub">Projected value over the next five years at your current yearly mileage.</p>
+          <div id="projection" class="projection"></div>
+        </div>
+
+        <div class="panel">
+          <h2>Similar cars that were listed</h2>
+          <div class="table-scroll">
+            <table class="similar">
+              <thead><tr><th scope="col">Car</th><th scope="col">Year</th><th scope="col">Km</th><th scope="col">Gearbox</th><th scope="col" class="num">Asking price</th></tr></thead>
+              <tbody id="similar"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="wrap footer">
+    <p>Estimates come from a model trained on <span id="rows">~1,000</span> used-Honda listings from 2023. Typical error is about <span id="mape">16%</span>, so treat the number as a starting point for negotiation, not a quote.</p>
+    <!-- Point this at your own repository after you push it -->
+    <p class="footer__links"><a href="/api/health">API status</a> <a href="https://github.com/" rel="noopener">Source code</a></p>
+  </footer>
+
+  <script type="module" src="/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,1071 @@
+{
+ "name": "AutoValuate Honda Ridge v2",
+ "trained_at": "2026-10-22T06:50:54Z",
+ "ref_year": 2024,
+ "alpha": 1.0,
+ "intercept": 14.774621213337177,
+ "numeric": {
+  "age": -0.05005934855945708,
+  "age2": -0.0033838230726525283,
+  "log_kms": -0.072149175841049
+ },
+ "weights": {
+  "fuel": {
+   "CNG": 0.020873,
+   "Diesel": -0.013604,
+   "Petrol": -0.007269
+  },
+  "trans": {
+   "Automatic": 0.058505,
+   "Manual": -0.058505
+  },
+  "family": {
+   "Accord": 0.094227,
+   "Amaze": -0.200433,
+   "BR-V": 0.062972,
+   "Brio": -0.28428,
+   "CR-V": 0.294098,
+   "City": 0.041592,
+   "Civic": 0.154764,
+   "Jazz": -0.121633,
+   "Mobilio": -0.011549,
+   "WR-V": -0.02976
+  },
+  "trim": {
+   "Anniversary": 0.033928,
+   "Basic": -0.142513,
+   "Corporate": 0.007307,
+   "DX": 0.2178,
+   "E": -0.110305,
+   "EX": -0.142117,
+   "EXi": -0.00102,
+   "Edge": -0.015667,
+   "Elegance": 0.001822,
+   "Exclusive": -0.028043,
+   "GXi": -0.112573,
+   "Privilege": 0.01374,
+   "RS": 0.067083,
+   "RVi": 0.105963,
+   "S": -0.090173,
+   "SV": -0.046674,
+   "SX": -0.020314,
+   "Select": -0.003618,
+   "Standard": 0.114565,
+   "V": -0.080856,
+   "VTi-L": 0.001745,
+   "VX": 0.049881,
+   "X": 0.075867,
+   "ZX": 0.104171
+  },
+  "variant": {
+   "Accord Elegance": 0.001822,
+   "Accord Standard": 0.09066,
+   "Accord VTi-L": 0.001745,
+   "Amaze E": -0.057134,
+   "Amaze EX": -0.15213,
+   "Amaze Exclusive": -0.028043,
+   "Amaze Privilege": 0.01374,
+   "Amaze S": -0.034787,
+   "Amaze SX": -0.020314,
+   "Amaze V": 0.114238,
+   "Amaze VX": -0.036004,
+   "BR-V E": -0.030623,
+   "BR-V S": 0.071677,
+   "BR-V V": 0.04226,
+   "BR-V VX": -0.020341,
+   "Brio EX": 0.010013,
+   "Brio S": -0.029086,
+   "Brio V": -0.093143,
+   "Brio VX": -0.172063,
+   "CR-V RVi": 0.105963,
+   "CR-V Standard": 0.188135,
+   "City Anniversary": 0.033928,
+   "City Corporate": 0.007307,
+   "City DX": 0.2178,
+   "City E": -0.031356,
+   "City EXi": -0.00102,
+   "City GXi": -0.112573,
+   "City S": 0.000727,
+   "City SV": -0.033546,
+   "City Standard": -0.219942,
+   "City V": 0.100098,
+   "City VX": 0.037169,
+   "City ZX": 0.042999,
+   "Civic E": 0.032028,
+   "Civic S": -0.090379,
+   "Civic Standard": 0.055712,
+   "Civic V": -0.190668,
+   "Civic VX": 0.286899,
+   "Civic ZX": 0.061172,
+   "Jazz Basic": -0.142513,
+   "Jazz E": -0.037903,
+   "Jazz S": -0.059219,
+   "Jazz SV": 0.015959,
+   "Jazz Select": -0.003618,
+   "Jazz V": 0.078257,
+   "Jazz VX": -0.048463,
+   "Jazz X": 0.075867,
+   "Mobilio E": 0.014683,
+   "Mobilio RS": 0.067083,
+   "Mobilio S": 0.038583,
+   "Mobilio V": -0.131898,
+   "WR-V Edge": -0.015667,
+   "WR-V S": 0.012311,
+   "WR-V SV": -0.029087,
+   "WR-V VX": 0.002683
+  }
+ },
+ "interval": {
+  "low": -0.2376078378334432,
+  "high": 0.23702429456765317,
+  "coverage": 0.8
+ },
+ "metrics": {
+  "cv": {
+   "r2": 0.8826,
+   "mae": 70456,
+   "mape": 15.72
+  },
+  "holdout": {
+   "r2": 0.8205,
+   "mae": 79321,
+   "mape": 15.09
+  },
+  "baseline": {
+   "r2": 0.8042,
+   "mae": 83160,
+   "mape": 19.7,
+   "negative_predictions": 7
+  },
+  "rows": 972
+ },
+ "bounds": {
+  "year": [
+   2000,
+   2023
+  ],
+  "kms": [
+   1425,
+   235702
+  ],
+  "median_kms": 60000
+ },
+ "fuels": [
+  "CNG",
+  "Diesel",
+  "Petrol"
+ ],
+ "trans": [
+  "Automatic",
+  "Manual"
+ ],
+ "catalog": {
+  "Accord": {
+   "count": 14,
+   "years": [
+    2007,
+    2011
+   ],
+   "trims": {
+    "Standard": {
+     "count": 12,
+     "years": [
+      2009,
+      2011
+     ],
+     "fuels": [
+      "Petrol"
+     ],
+     "trans": [
+      "Automatic",
+      "Manual"
+     ],
+     "median_price": 389500
+    },
+    "Elegance": {
+     "count": 1,
+     "years": [
+      2010,
+      2010
+     ],
+     "fuels": [
+      "Petrol"
+     ],
+     "trans": [
+      "Automatic"
+     ],
+     "median_price": 333000
+    },
+    "VTi-L": {
+     "count": 1,
+     "years": [
+      2007,
+      2007
+     ],
+     "fuels": [
+      "Petrol"
+     ],
+     "trans": [
+      "Automatic"
+     ],
+     "median_price": 200000
+    }
+   }
+  },
+  "Amaze": {
+   "count": 209,
+   "years": [
+    2013,
+    2023
+   ],
+   "trims": {
+    "S": {
+     "count": 122,
+     "years": [
+      2013,
+      2023
+     ],
+     "fuels": [
+      "CNG",
+      "Diesel",
+      "Petrol"
+     ],
+     "trans": [
+      "Automatic",
+      "Manual"
+     ],
+     "median_price": 450000
+    },
+    "VX": {
+     "count": 37,
+     "years": [
+      2013,
+      2022
+     ],
+     "fuels": [
+      "Diesel",
+      "Petrol"
+     ],
+     "trans": [
+      "Automatic",
+      "Manual"
+     ],
+     "median_price": 610000
+    },
+    "V": {
+     "count": 15,
+     "years": [
+      2016,
+      2019
+     ],
+     "fuels": [
+      "Diesel",
+      "Petrol"
+     ],
+     "trans": [
+      "Automatic",
+      "Manual"
+     ],
+     "median_price": 698000
+    },
+    "E": {
+     "count": 14,
+     "years": [
+      2013,
+      2019
+     ],
+     "fuels": [
+      "Diesel",
+      "Petrol"
+     ],
+     "trans": [
+      "Manual"
+     ],
+     "median_price": 387500
+    },
+    "SX": {
+     "count": 9,
+     "years": [
+      2013,
+      2017
+     ],
+     "fuels": [
+      "Diesel",
+      "Petrol"
+     ],
+     "trans": [
+      "Manual"
+     ],
+     "median_price": 425000
+    },
+    "EX": {
+     "count": 7,
+     "years": [
+      2013,
+      2018
+     ],
+     "fuels": [
+      "Diesel",
+      "Petrol"
+     ],
+     "trans": [
+      "Manual"
+     ],
+     "median_price": 300000
+    },
+    "Exclusive": {
+     "count": 3,
+     "years": [
+      2019,
+      2021
+     ],
+     "fuels": [
+      "Diesel",
+      "Petrol"
+     ],
+     "trans": [
+      "Automatic",
+      "Manual"
+     ],
+     "median_price": 751000
+    },
+    "Privilege": {
+     "count": 2,
+     "years": [
+      2017,
+      2018
+     ],
+     "fuels": [
+      "Diesel"
+     ],
+     "trans": [
+      "Manual"
+     ],
+     "median_price": 560000
+    }
+   }
+  },
+  "BR-V": {
+   "count": 22,
+   "years": [
+    2016,
+    2019
+   ],
+   "trims": {
+    "V": {
+     "count": 15,
+     "years": [
+      2016,
+      2019
+     ],
+     "fuels": [
+      "Diesel",
+      "Petrol"
+     ],
+     "trans": [
+      "Automatic",
+      "Manual"
+     ],
+     "median_price": 700000
+    },
+    "S": {
+     "count": 5,
+     "years": [
+      2016,
+      2019
+     ],
+     "fuels": [
+      "Diesel",
+      "Petrol"
+     ],
+     "trans": [
+      "Manual"
+     ],
+     "median_price": 715000
+    },
+    "E": {
+     "count": 1,
+     "years": [
+      2019,
+      2019
+     ],
+     "fuels": [
+      "Petrol"
+     ],
+     "trans": [
+      "Manual"
+     ],
+     "median_price": 675000
+    },
+    "VX": {
+     "count": 1,
+     "years": [
+      2019,
+      2019
+     ],
+     "fuels": [
+      "Petrol"
+     ],
+     "trans": [
+      "Manual"
+     ],
+     "median_price": 795000
+    }
+   }
+  },
+  "Brio": {
+   "count": 55,
+   "years": [
+    2012,
+    2018
+   ],
+   "trims": {
+    "S": {
+     "count": 38,
+     "years": [
+      2012,
+      2018
+     ],
+     "fuels": [
+      "Petrol"
+     ],
+     "trans": [
+      "Manual"
+     ],
+     "median_price": 305000
+    },
+    "VX": {
+     "count": 8,
+     "years": [
+      2013,
+      2017
+     ],
+     "fuels": [
+      "Petrol"
+     ],
+     "trans": [
+      "Automatic",
+      "Manual"
+     ],
+     "median_price": 355000
+    },
+    "V": {
+     "count": 7,
+     "years": [
+      2012,
+      2016
+     ],
+     "fuels": [
+      "Petrol"
+     ],
+     "trans": [
+      "Automatic",
+      "Manual"
+     ],
+     "median_price": 290000
+    },
+    "EX": {
+     "count": 2,
+     "years": [
+      2013,
+      2013
+     ],
+     "fuels": [
+      "Petrol"
+     ],
+     "trans": [
+      "Manual"
+     ],
+     "median_price": 296500
+    }
+   }
+  },
+  "CR-V": {
+   "count": 17,
+   "years": [
+    2004,
+    2019
+   ],
+   "trims": {
+    "Standard": {
+     "count": 15,
+     "years": [
+      2004,
+      2019
+     ],
+     "fuels": [
+      "Diesel",
+      "Petrol"
+     ],
+     "trans": [
+      "Automatic",
+      "Manual"
+     ],
+     "median_price": 1050000
+    },
+    "RVi": {
+     "count": 2,
+     "years": [
+      2007,
+      2008
+     ],
+     "fuels": [
+      "Petrol"
+     ],
+     "trans": [
+      "Manual"
+     ],
+     "median_price": 337500
+    }
+   }
+  },
+  "City": {
+   "count": 468,
+   "years": [
+    2000,
+    2022
+   ],
+   "trims": {
+    "V": {
+     "count": 142,
+     "years": [
+      2008,
+      2022
+     ],
+     "fuels": [
+      "Diesel",
+      "Petrol"
+     ],
+     "trans": [
+      "Automatic",
+      "Manual"
+     ],
+     "median_price": 575000
+    },
+    "VX": {
+     "count": 87,
+     "years": [
+      2014,
+      2022
+     ],
+     "fuels": [
+      "Diesel",
+      "Petrol"
+     ],
+     "trans": [
+      "Automatic",
+      "Manual"
+     ],
+     "median_price": 725000
+    },
+    "S": {
+     "count": 85,
+     "years": [
+      2008,
+      2020
+     ],
+     "fuels": [
+      "Diesel",
+      "Petrol"
+     ],
+     "trans": [
+      "Automatic",
+      "Manual"
+     ],
+     "median_price": 300000
+    },
+    "SV": {
+     "count": 61,
+     "years": [
+      2014,
+      2021
+     ],
+     "fuels": [
+      "Diesel",
+      "Petrol"
+     ],
+     "trans": [
+      "Automatic",
+      "Manual"
+     ],
+     "median_price": 550000
+    },
+    "ZX": {
+     "count": 40,
+     "years": [
+      2017,
+      2022
+     ],
+     "fuels": [
+      "Diesel",
+      "Petrol"
+     ],
+     "trans": [
+      "Automatic",
+      "Manual"
+     ],
+     "median_price": 1177500
+    },
+    "GXi": {
+     "count": 23,
+     "years": [
+      2003,
+      2016
+     ],
+     "fuels": [
+      "Petrol"
+     ],
+     "trans": [
+      "Automatic",
+      "Manual"
+     ],
+     "median_price": 150000
+    },
+    "E": {
+     "count": 19,
+     "years": [
+      2008,
+      2015
+     ],
+     "fuels": [
+      "Diesel",
+      "Petrol"
+     ],
+     "trans": [
+      "Manual"
+     ],
+     "median_price": 295000
+    },
+    "EXi": {
+     "count": 4,
+     "years": [
+      2004,
+      2008
+     ],
+     "fuels": [
+      "Petrol"
+     ],
+     "trans": [
+      "Manual"
+     ],
+     "median_price": 139000
+    },
+    "Standard": {
+     "count": 4,
+     "years": [
+      2007,
+      2012
+     ],
+     "fuels": [
+      "Petrol"
+     ],
+     "trans": [
+      "Manual"
+     ],
+     "median_price": 185000
+    },
+    "Anniversary": {
+     "count": 1,
+     "years": [
+      2018,
+      2018
+     ],
+     "fuels": [
+      "Petrol"
+     ],
+     "trans": [
+      "Automatic"
+     ],
+     "median_price": 1050000
+    },
+    "Corporate": {
+     "count": 1,
+     "years": [
+      2012,
+      2012
+     ],
+     "fuels": [
+      "Petrol"
+     ],
+     "trans": [
+      "Manual"
+     ],
+     "median_price": 385000
+    },
+    "DX": {
+     "count": 1,
+     "years": [
+      2000,
+      2000
+     ],
+     "fuels": [
+      "Petrol"
+     ],
+     "trans": [
+      "Manual"
+     ],
+     "median_price": 170000
+    }
+   }
+  },
+  "Civic": {
+   "count": 35,
+   "years": [
+    2006,
+    2019
+   ],
+   "trims": {
+    "V": {
+     "count": 20,
+     "years": [
+      2007,
+      2011
+     ],
+     "fuels": [
+      "Petrol"
+     ],
+     "trans": [
+      "Automatic",
+      "Manual"
+     ],
+     "median_price": 200000
+    },
+    "S": {
+     "count": 5,
+     "years": [
+      2006,
+      2011
+     ],
+     "fuels": [
+      "Petrol"
+     ],
+     "trans": [
+      "Automatic",
+      "Manual"
+     ],
+     "median_price": 200000
+    },
+    "E": {
+     "count": 4,
+     "years": [
+      2007,
+      2009
+     ],
+     "fuels": [
+      "Petrol"
+     ],
+     "trans": [
+      "Manual"
+     ],
+     "median_price": 230000
+    },
+    "VX": {
+     "count": 4,
+     "years": [
+      2019,
+      2019
+     ],
+     "fuels": [
+      "Diesel",
+      "Petrol"
+     ],
+     "trans": [
+      "Automatic",
+      "Manual"
+     ],
+     "median_price": 1722500
+    },
+    "Standard": {
+     "count": 1,
+     "years": [
+      2007,
+      2007
+     ],
+     "fuels": [
+      "Petrol"
+     ],
+     "trans": [
+      "Manual"
+     ],
+     "median_price": 310000
+    },
+    "ZX": {
+     "count": 1,
+     "years": [
+      2019,
+      2019
+     ],
+     "fuels": [
+      "Petrol"
+     ],
+     "trans": [
+      "Automatic"
+     ],
+     "median_price": 1500000
+    }
+   }
+  },
+  "Jazz": {
+   "count": 90,
+   "years": [
+    2009,
+    2019
+   ],
+   "trims": {
+    "V": {
+     "count": 43,
+     "years": [
+      2015,
+      2019
+     ],
+     "fuels": [
+      "Diesel",
+      "Petrol"
+     ],
+     "trans": [
+      "Automatic",
+      "Manual"
+     ],
+     "median_price": 585000
+    },
+    "VX": {
+     "count": 15,
+     "years": [
+      2015,
+      2019
+     ],
+     "fuels": [
+      "Diesel",
+      "Petrol"
+     ],
+     "trans": [
+      "Automatic",
+      "Manual"
+     ],
+     "median_price": 609000
+    },
+    "S": {
+     "count": 12,
+     "years": [
+      2009,
+      2018
+     ],
+     "fuels": [
+      "Diesel",
+      "Petrol"
+     ],
+     "trans": [
+      "Automatic",
+      "Manual"
+     ],
+     "median_price": 399000
+    },
+    "SV": {
+     "count": 8,
+     "years": [
+      2015,
+      2017
+     ],
+     "fuels": [
+      "Diesel",
+      "Petrol"
+     ],
+     "trans": [
+      "Manual"
+     ],
+     "median_price": 503000
+    },
+    "Basic": {
+     "count": 6,
+     "years": [
+      2009,
+      2012
+     ],
+     "fuels": [
+      "Petrol"
+     ],
+     "trans": [
+      "Manual"
+     ],
+     "median_price": 201000
+    },
+    "X": {
+     "count": 4,
+     "years": [
+      2011,
+      2012
+     ],
+     "fuels": [
+      "Petrol"
+     ],
+     "trans": [
+      "Manual"
+     ],
+     "median_price": 370000
+    },
+    "E": {
+     "count": 1,
+     "years": [
+      2015,
+      2015
+     ],
+     "fuels": [
+      "Petrol"
+     ],
+     "trans": [
+      "Manual"
+     ],
+     "median_price": 360000
+    },
+    "Select": {
+     "count": 1,
+     "years": [
+      2010,
+      2010
+     ],
+     "fuels": [
+      "Petrol"
+     ],
+     "trans": [
+      "Manual"
+     ],
+     "median_price": 240000
+    }
+   }
+  },
+  "Mobilio": {
+   "count": 19,
+   "years": [
+    2014,
+    2017
+   ],
+   "trims": {
+    "V": {
+     "count": 9,
+     "years": [
+      2014,
+      2017
+     ],
+     "fuels": [
+      "Diesel",
+      "Petrol"
+     ],
+     "trans": [
+      "Manual"
+     ],
+     "median_price": 400000
+    },
+    "S": {
+     "count": 5,
+     "years": [
+      2014,
+      2015
+     ],
+     "fuels": [
+      "Diesel",
+      "Petrol"
+     ],
+     "trans": [
+      "Manual"
+     ],
+     "median_price": 450000
+    },
+    "RS": {
+     "count": 4,
+     "years": [
+      2014,
+      2015
+     ],
+     "fuels": [
+      "Diesel"
+     ],
+     "trans": [
+      "Manual"
+     ],
+     "median_price": 542500
+    },
+    "E": {
+     "count": 1,
+     "years": [
+      2015,
+      2015
+     ],
+     "fuels": [
+      "Diesel"
+     ],
+     "trans": [
+      "Manual"
+     ],
+     "median_price": 495000
+    }
+   }
+  },
+  "WR-V": {
+   "count": 43,
+   "years": [
+    2017,
+    2022
+   ],
+   "trims": {
+    "VX": {
+     "count": 34,
+     "years": [
+      2017,
+      2022
+     ],
+     "fuels": [
+      "Diesel",
+      "Petrol"
+     ],
+     "trans": [
+      "Manual"
+     ],
+     "median_price": 750000
+    },
+    "S": {
+     "count": 6,
+     "years": [
+      2017,
+      2018
+     ],
+     "fuels": [
+      "Diesel",
+      "Petrol"
+     ],
+     "trans": [
+      "Manual"
+     ],
+     "median_price": 621500
+    },
+    "Edge": {
+     "count": 2,
+     "years": [
+      2018,
+      2019
+     ],
+     "fuels": [
+      "Petrol"
+     ],
+     "trans": [
+      "Manual"
+     ],
+     "median_price": 742500
+    },
+    "SV": {
+     "count": 1,
+     "years": [
+      2021,
+      2021
+     ],
+     "fuels": [
+      "Petrol"
+     ],
+     "trans": [
+      "Manual"
+     ],
+     "median_price": 814000
+    }
+   }
+  }
+ }
+}
